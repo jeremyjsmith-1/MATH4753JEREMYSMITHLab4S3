@@ -1,0 +1,100 @@
+---
+title: "MATH4753JEREMYSMITHLab4S3-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{MATH4753JEREMYSMITHLab4S3-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753JEREMYSMITHLab4S3)
+```
+
+## K = 1
+
+### Task 1
+
+Build an S3 constructor function that takes two arguments, $x$ and $k$ and returns the values of $x$, the new variable $inout$, and $k$.
+
+```{r task 1.1}
+df1 <- LS04TestSummer::mybiplot(epagas$MPG, 1)
+head(df1$result_table)
+```
+
+### Task 2
+
+Plot the data in a histogram with respect to $inout$.
+
+```{r task 1.2]}
+df1$plot
+```
+
+### Task 3
+
+Build a summary table that provides descriptive statistics for the data.
+
+```{r task 1.3}
+df1$summary
+```
+
+## k = 2
+
+### Task 1
+
+Build an S3 constructor function that takes two arguments, $x$ and $k$ and returns the values of $x$, the new variable $inout$, and $k$.
+
+```{r task 2.1}
+df2 <- LS04TestSummer::mybiplot(epagas$MPG, 2)
+head(df2$result_table)
+```
+
+### Task 2
+
+Plot the data in a histogram with respect to $inout$.
+
+```{r task 2.2]}
+df2$plot
+```
+
+### Task 3
+
+Build a summary table that provides descriptive statistics for the data.
+
+```{r task 2.3}
+df2$summary
+```
+
+## k = 3
+
+### Task 1
+
+Build an S3 constructor function that takes two arguments, $x$ and $k$ and returns the values of $x$, the new variable $inout$, and $k$.
+
+```{r task 3.1}
+df3 <- LS04TestSummer::mybiplot(epagas$MPG, 3)
+head(df3$result_table)
+```
+
+### Task 2
+
+Plot the data in a histogram with respect to $inout$.
+
+```{r task 3.2]}
+df3$plot
+```
+
+### Task 3
+
+Build a summary table that provides descriptive statistics for the data.
+
+```{r task 3.3}
+df3$summary
+```
