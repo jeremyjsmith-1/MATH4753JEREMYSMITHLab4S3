@@ -16,20 +16,18 @@
 #'
 #' @examples
 #' mybiplot(rnorm(100), 2)
-mybiplot <- function(x = double(), k = double()){
+print.math4753biplot <- function(x, ...){
 
   stopifnot(is.double(x))
   stopifnot(is.double(k))
 
-  # Calculate metrics:
-  x_bar <- mean(x, na.rm = TRUE)
-  stdev <- sd(x, na.rm = TRUE)
-  z_scr <- (x - x_bar)/stdev
+  #Provide Histogram of data with inout shading
+  plot <- ggplot2::ggplot(result_table, ggplot2::aes(x = x, fill = inout)) +
+    ggplot2::geom_histogram(bins = 30, color = "black") +
+    ggplot2::labs(
+      title = paste0("Histogram of biplot with k = ", k),
+      subtitle = "Jeremy Smith")
+    )
 
-  # Analyse data for outliers with respect to k
-  y <- ifelse(abs(z_scr) < k, "in",
-                  ifelse(z_scr > k, "outu", "outl"))
-
-  list(x = x, y = y, k = k)
-  structure(.Data = l, class = "math4753biplot")
+  list(result_table = result_table, plot = plot, summary = sumry)
 }
