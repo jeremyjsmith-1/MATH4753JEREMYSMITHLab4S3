@@ -25,7 +25,7 @@ library(MATH4753JEREMYSMITHLab4S3)
 Build an S3 constructor function that takes two arguments, $x$ and $k$ and returns the values of $x$, the new variable $inout$, and $k$.
 
 ```{r task 1.1}
-df1 <- LS04TestSummer::mybiplot(epagas$MPG, 1)
+df1 <- mybiplot(epagas$MPG, 1)
 head(df1$result_table)
 ```
 
@@ -52,7 +52,7 @@ df1$summary
 Build an S3 constructor function that takes two arguments, $x$ and $k$ and returns the values of $x$, the new variable $inout$, and $k$.
 
 ```{r task 2.1}
-df2 <- LS04TestSummer::mybiplot(epagas$MPG, 2)
+df2 <- mybiplot(epagas$MPG, 2)
 head(df2$result_table)
 ```
 
@@ -79,7 +79,7 @@ df2$summary
 Build an S3 constructor function that takes two arguments, $x$ and $k$ and returns the values of $x$, the new variable $inout$, and $k$.
 
 ```{r task 3.1}
-df3 <- LS04TestSummer::mybiplot(epagas$MPG, 3)
+df3 <- mybiplot(epagas$MPG, 3)
 head(df3$result_table)
 ```
 
